@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import DomainSetup from './DomainSetup';
 import Inbox from './Inbox';
+import ClientIntegration from './ClientIntegration';
 
 function App() {
-  const [tab, setTab] = useState<'inbox' | 'setup'>('inbox');
+  const [tab, setTab] = useState<'inbox' | 'setup' | 'clients'>('inbox');
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
@@ -26,12 +27,20 @@ function App() {
             >
               Domain Setup
             </button>
+            <button 
+              onClick={() => setTab('clients')}
+              className={`px-3 py-2 rounded-md text-sm font-medium ${tab === 'clients' ? 'bg-gray-100 text-gray-900' : 'text-gray-500 hover:text-gray-900'}`}
+            >
+              Gmail / Outlook Sync
+            </button>
           </nav>
         </div>
       </header>
 
       <main className="flex-1 max-w-5xl w-full mx-auto p-4 sm:p-6 lg:p-8">
-        {tab === 'inbox' ? <Inbox /> : <DomainSetup />}
+        {tab === 'inbox' && <Inbox />}
+        {tab === 'setup' && <DomainSetup />}
+        {tab === 'clients' && <ClientIntegration />}
       </main>
     </div>
   );

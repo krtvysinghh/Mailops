@@ -8,6 +8,7 @@ Mailops is a modern, lightweight, and completely free alternative to Google Work
 
 - **100% Free Architecture**: Mailops is designed to be completely free forever by leveraging generous free tiers.
 - **Free Custom Domain Setup**: Just provide a Cloudflare API token and Mailops will auto-provision all required MX, SPF, and DMARC records instantly.
+- **Gmail & Outlook Sync**: You don't have to use our web dashboard. Easily connect your custom domain to Gmail, Outlook, or Apple Mail to send and receive emails directly from your favorite client!
 - **Unified Inbox**: View all your custom domain emails in one sleek dashboard.
 - **Zero Cost Breakdown**:
   - Inbound: Cloudflare Email Routing (Free)
