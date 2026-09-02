@@ -12,27 +12,5 @@ migrations_dir = "drizzle"
 binding = "BUCKET"
 bucket_name = "mailops-raw-emails"
 
-# ==============================================================
-# 🥇 $5 PAID TIER FEATURES (Uncomment to enable)
-# ==============================================================
 
-# 1. Native Outbound Email
-# [[send_email]]
-# name = "SEND_EMAIL"
-# destination_address = "your-domain.com"
-
-# 2. Queues for reliable processing
-# [[queues.producers]]
-# binding = "EMAIL_QUEUE"
-# queue = "mailops-queue"
-# [[queues.consumers]]
-# queue = "mailops-queue"
-
-# 3. Durable Objects for WebSockets / Real-time Sync
-# [[durable_objects.bindings]]
-# name = "REALTIME"
-# class_name = "RealtimeHub"
-# [[migrations]]
-# tag = "v1"
-# new_sqlite_classes = ["RealtimeHub"]
 

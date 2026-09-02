@@ -4,27 +4,18 @@
 
 Mailops is a modern, lightweight, and completely free alternative to Google Workspace / Mailflare for hosting your custom domain emails. It uses Cloudflare Email Routing for inbound emails and Resend for outbound emails, wrapping everything in a blazing fast React SPA and Hono API.
 
-## 🚀 Choose Your Path: Free Tier vs. $5 Tier
-
-Mailops is designed to adapt to your Cloudflare account. You can run it **100% for free**, or you can unlock native features if you are on the **Cloudflare Workers Paid Plan ($5/mo)**.
-
-### 🥉 The Free Tier (Default)
-Run your own custom domain email without paying a cent.
-- **Inbound:** Cloudflare Email Routing (Free)
-- **Outbound:** Resend API (3,000 free emails/month)
-- **Real-time:** Short-polling or Hono Server-Sent Events (SSE)
-- **Storage & DB:** Cloudflare D1 and R2 free tiers
-
-### 🥇 The $5 Everything-Included Tier
-If you pay $5/mo for Cloudflare Workers, Mailops unlocks powerful native features:
-- **Native Outbound:** Uses Cloudflare's native `send_email` binding. No need for Resend or third-party SMTP!
-- **Real-time Sync:** Uses **Durable Objects** and WebSockets for instant, multiplayer-style inbox updates.
-- **Reliable Queues:** Uses Cloudflare Queues for guaranteed email processing and retries.
-
 ## Features
 
+- **100% Free Architecture**: Mailops is designed to be completely free forever by leveraging generous free tiers.
 - **Free Custom Domain Setup**: Just provide a Cloudflare API token and Mailops will auto-provision all required MX, SPF, and DMARC records instantly.
 - **Unified Inbox**: View all your custom domain emails in one sleek dashboard.
+- **Zero Cost Breakdown**:
+  - Inbound: Cloudflare Email Routing (Free)
+  - Outbound: Resend API (3,000 free emails/month)
+  - Backend: Cloudflare Workers + Hono (100,000 requests/day free)
+  - Database: Cloudflare D1 (Generous free tier)
+  - Attachments: Cloudflare R2 (10GB free)
+  - Frontend: Cloudflare Pages (Unlimited bandwidth)
 - **Lightning Fast**: Built with Hono + React Vite.
 
 ## Architecture
