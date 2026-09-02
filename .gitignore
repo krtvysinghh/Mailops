@@ -4,3 +4,6 @@ dist
 .wrangler
 .env
 .DS_Store
+.agents/
+ORIGINAL_REQUEST.md
+TEST_READY.md
