@@ -2,6 +2,11 @@ import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import { dnsRouter } from './routes/dns';
 import { sendRouter } from './routes/send';
+import { aiRouter } from './routes/ai';
+import { productivityRouter } from './routes/productivity';
+import { collaborationRouter } from './routes/collaboration';
+import { securityRouter } from './routes/security';
+import { customizationRouter } from './routes/customization';
 import PostalMime from 'postal-mime';
 import { drizzle } from 'drizzle-orm/d1';
 import { emails } from './db/schema';
@@ -13,11 +18,16 @@ type Bindings = {
   BUCKET: R2Bucket;
 };
 
-const app = new Hono<{ Bindings: Bindings }>();
+export const app = new Hono<{ Bindings: Bindings }>();
 
 app.use('*', cors());
 app.route('/api/dns', dnsRouter);
 app.route('/api/send', sendRouter);
+app.route('/api/ai', aiRouter);
+app.route('/api/productivity', productivityRouter);
+app.route('/api/collaboration', collaborationRouter);
+app.route('/api/security', securityRouter);
+app.route('/api/customization', customizationRouter);
 
 app.get('/api/inbox', async (c) => {
   const db = drizzle(c.env.DB);
