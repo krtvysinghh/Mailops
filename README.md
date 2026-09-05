@@ -1,12 +1,12 @@
 # 📬 Mailops
 
-**100% Free Custom Domain Email Platform — 50 Advanced Features, Zero Dependencies.**
+**100% Free Custom Domain Email Platform — 65+ Advanced Features, Zero Dependencies.**
 
-Mailops is a modern, self-hosted email platform built entirely on Cloudflare's free tier. It provides custom domain email with sending, receiving, and seamless Gmail/Outlook integration — plus 50 advanced features including AI-powered email intelligence, end-to-end encryption, team collaboration, and more. All implemented in pure TypeScript with zero third-party runtime dependencies.
+Mailops is a modern, self-hosted email platform built entirely on Cloudflare's free tier. It provides custom domain email with sending, receiving, and seamless Gmail/Outlook integration — plus 65+ advanced features including AI-powered email intelligence, end-to-end encryption, team collaboration, email aliasing, analytics, plugin system, and more. All implemented in pure TypeScript with zero third-party runtime dependencies.
 
 ---
 
-## ✨ Feature Overview (50 Features)
+## ✨ Feature Overview (50 Core Features)
 
 ### 🧠 AI & Smart Features (#1–10)
 
@@ -82,6 +82,29 @@ Mailops is a modern, self-hosted email platform built entirely on Cloudflare's f
 | 48 | **Drag-and-Drop Folders** | HTML5 DnD for nested folder organization |
 | 49 | **Attachment Indexer** | In-browser text/CSV/JSON preview and full-text search |
 | 50 | **Notification Center & DND** | Web Notifications API with badge feeds and Quiet Hours |
+
+---
+
+## 🚀 Premium Features (#51–66)
+
+| # | Feature | Description |
+|---|---------|-------------|
+| 51 | **Email Aliasing System** | Create unlimited aliases, random privacy addresses, and wildcard catch-all mappings |
+| 52 | **AI Email Composer** | Generate full email drafts from one-line prompts using Cloudflare Workers AI |
+| 53 | **Catch-All Wildcard Routing** | Capture any email sent to `*@yourdomain.com` automatically |
+| 54 | **Email Analytics Dashboard** | Visualize volume, response times, top contacts, and busiest hours |
+| 55 | **Webhook Integrations** | Fire HMAC-signed webhooks to Slack, Discord, or Zapier on email events |
+| 56 | **Multi-Domain Manager** | Manage 5+ custom domains from a single dashboard with health monitoring |
+| 57 | **Email Forwarding Rules** | Auto-forward emails to external addresses based on sender, subject, or keywords |
+| 58 | **Contact Auto-Complete** | Trie-based fuzzy search with frecency-ranked address book suggestions |
+| 59 | **Conversation View** | Gmail-style threaded conversations with collapsed quoted text |
+| 60 | **Domain Health Dashboard** | Live DNS verification status (MX, SPF, DKIM, DMARC) with auto-fix suggestions |
+| 61 | **Signature Click Tracking** | Track link clicks in your email signature with analytics |
+| 62 | **Spam Score Calculator** | Pre-send deliverability scoring with 200+ spam trigger word detection |
+| 63 | **WebAuthn Passkeys** | Passwordless, phishing-proof login with FIDO2 passkey authentication |
+| 64 | **Email Backup & Archive** | Automated R2 snapshots with SHA-256 integrity checksums and search |
+| 65 | **PWA & Push Notifications** | Installable progressive web app with offline support and real-time push alerts |
+| 66 | **Open-Source Plugin System** | Hook-based architecture for community plugins (AutoTranslate, CRM Sync, etc.) |
 
 ---
 
