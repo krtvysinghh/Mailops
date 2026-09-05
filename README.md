@@ -1,110 +1,145 @@
 # 📬 Mailops
 
-**100% Free Custom Domain Email Platform — 65+ Advanced Features, Zero Dependencies.**
+**100% Free Custom Domain Email Platform — 100 Advanced Features, Zero Dependencies.**
 
-Mailops is a modern, self-hosted email platform built entirely on Cloudflare's free tier. It provides custom domain email with sending, receiving, and seamless Gmail/Outlook integration — plus 65+ advanced features including AI-powered email intelligence, end-to-end encryption, team collaboration, email aliasing, analytics, plugin system, and more. All implemented in pure TypeScript with zero third-party runtime dependencies.
-
----
-
-## ✨ Feature Overview (50 Core Features)
-
-### 🧠 AI & Smart Features (#1–10)
-
-| # | Feature | Description |
-|---|---------|-------------|
-| 1 | **Smart Reply Generator** | 3 contextual one-click reply suggestions with sentiment & tone adaptation |
-| 2 | **Email Summarizer (TL;DR)** | Extractive TextRank graph algorithm for 1-sentence summaries & key bullet points |
-| 3 | **Smart Categorization** | Bayesian token scoring into Primary/Updates/Social/Promos + priority scoring |
-| 4 | **Sentiment & Urgency Analyzer** | Polarity scoring and urgent deadline extraction from email content |
-| 5 | **Action Item Extractor** | Modal verb grammar matcher for commitments, tasks, assignees & due dates |
-| 6 | **BM25 Full-Text Search** | Inverted index search with boolean operators & Levenshtein typo tolerance |
-| 7 | **Decision Tracker** | Consensus & agreement discourse pattern parser across email threads |
-| 8 | **Follow-Up Nudge Engine** | Response expectation tracker identifying unanswered emails |
-| 9 | **Tone & Polish Rephraser** | Syntactic transformer for Professional, Casual, Concise, and Expanded modes |
-| 10 | **Smart Unsubscribe** | RFC 2369 / RFC 8058 header & HTML link parser for 1-click unsubscribe |
-
-### ⚡ Productivity & Workflows (#11–20)
-
-| # | Feature | Description |
-|---|---------|-------------|
-| 11 | **Scheduled Send** | Future timestamp dispatch queue with cancellation support |
-| 12 | **Undo Send** | 5-30s configurable grace buffer with instant cancellation |
-| 13 | **Email Snooze** | Temporarily hide emails and resurface them at a chosen time |
-| 14 | **Automation Filter Engine** | Trigger-Condition-Action AST workflow evaluator on inbound/outbound emails |
-| 15 | **Templates & Canned Responses** | Dynamic `{{placeholder}}` variable interpolation engine |
-| 16 | **Keyboard Shortcuts & Cmd+K** | Superhuman-style navigation + command palette search |
-| 17 | **Thread Tree View** | JWZ RFC 5322 conversation tree reconstruction algorithm |
-| 18 | **Batch Actions** | Multi-select bulk operations (mark read, archive, label, delete) |
-| 19 | **Vacation Responder** | RFC 3834 auto-responder with 24h cooldown loop prevention |
-| 20 | **Offline Support** | IndexedDB local storage with offline action mutation queue |
-
-### 🤝 Collaboration & Multiplayer (#21–30)
-
-| # | Feature | Description |
-|---|---------|-------------|
-| 21 | **Shared Team Inboxes** | Multi-user domain inbox access with Owner/Admin/Member/Viewer RBAC |
-| 22 | **Email Assignment** | Thread assignment with status lifecycle state machine |
-| 23 | **Internal Notes** | Private team notes hidden from external recipients |
-| 24 | **Live Presence** | Active viewers and composing collision indicator |
-| 25 | **Collaborative Drafts** | Optimistic concurrency versioning & text patch merger |
-| 26 | **@Mentions & Alerts** | `@username` parser with in-app notification alerts |
-| 27 | **Audit Log** | Append-only immutable chronological event store |
-| 28 | **Shareable Thread Links** | Secure tokenized expiring public/internal links |
-| 29 | **Tag Hierarchy** | Recursive color-coded nested taxonomy (`Support/Tier1`) |
-| 30 | **CRM Sidebar** | Sender profile, history count, recent threads, and notes drawer |
-
-### 🛡️ Security & Compliance (#31–40)
-
-| # | Feature | Description |
-|---|---------|-------------|
-| 31 | **DKIM/SPF/DMARC Verifier** | RFC 7208 / 6376 / 7489 cryptographic header verifier |
-| 32 | **Phishing Detector** | Homograph/punycode detector + href/text mismatch analyzer |
-| 33 | **E2E Encryption** | AES-256-GCM / RSA-OAEP Web Crypto envelope encryption |
-| 34 | **Attachment Scanner** | Magic byte file signature validator + executable blocker |
-| 35 | **DLP & PII Scanner** | Pre-send scanner for credit cards (Luhn), SSNs, API tokens |
-| 36 | **Tracking Pixel Blocker** | HTML sanitizer stripping 1x1 tracking pixels |
-| 37 | **Expiring Emails** | Confidential mode with PIN protection & auto-purge |
-| 38 | **Two-Factor Auth (TOTP)** | Pure JS RFC 6238 TOTP engine with QR code & backup codes |
-| 39 | **Rate Limiter** | Sliding window token bucket for API routes |
-| 40 | **GDPR Data Export & Purge** | Streaming JSON/EML export and cryptographic record purging |
-
-### 🎨 Customization & UX (#41–50)
-
-| # | Feature | Description |
-|---|---------|-------------|
-| 41 | **Dark Mode & Themes** | Light, Dark, Solarized, High-Contrast with CSS variables |
-| 42 | **Split Pane Layouts** | 3-pane vertical, 2-pane horizontal, compact list, Zen mode |
-| 43 | **Rich Markdown Composer** | ContentEditable WYSIWYG with live markdown shortcuts |
-| 44 | **Custom Signatures** | Rich HTML signatures per alias with RFC `-- \n` delimiters |
-| 45 | **Plus-Addressing** | RFC 5233 sub-addressing (`user+alias@domain`) |
-| 46 | **Sound Effects Synth** | W3C Web Audio API synthesized audio (swoosh, chime, boop) |
-| 47 | **Print & EML Export** | Print stylesheet, raw RFC 822 `.eml` blob generator |
-| 48 | **Drag-and-Drop Folders** | HTML5 DnD for nested folder organization |
-| 49 | **Attachment Indexer** | In-browser text/CSV/JSON preview and full-text search |
-| 50 | **Notification Center & DND** | Web Notifications API with badge feeds and Quiet Hours |
+Mailops is a modern, self-hosted email platform built on Cloudflare's free tier. It provides custom domain email with sending, receiving, and seamless Gmail/Outlook integration — plus 100 advanced features including AI-powered email intelligence, end-to-end encryption, team collaboration, email aliasing, analytics, protocols (CalDAV, CardDAV, JMAP, IMAP bridge), Docker self-hosting, and an open-source plugin system. All implemented in pure TypeScript with zero third-party runtime dependencies.
 
 ---
 
-## 🚀 Premium Features (#51–66)
+## ✨ Complete Feature Overview (100 Features)
 
-| # | Feature | Description |
-|---|---------|-------------|
-| 51 | **Email Aliasing System** | Create unlimited aliases, random privacy addresses, and wildcard catch-all mappings |
-| 52 | **AI Email Composer** | Generate full email drafts from one-line prompts using Cloudflare Workers AI |
-| 53 | **Catch-All Wildcard Routing** | Capture any email sent to `*@yourdomain.com` automatically |
-| 54 | **Email Analytics Dashboard** | Visualize volume, response times, top contacts, and busiest hours |
-| 55 | **Webhook Integrations** | Fire HMAC-signed webhooks to Slack, Discord, or Zapier on email events |
-| 56 | **Multi-Domain Manager** | Manage 5+ custom domains from a single dashboard with health monitoring |
-| 57 | **Email Forwarding Rules** | Auto-forward emails to external addresses based on sender, subject, or keywords |
-| 58 | **Contact Auto-Complete** | Trie-based fuzzy search with frecency-ranked address book suggestions |
-| 59 | **Conversation View** | Gmail-style threaded conversations with collapsed quoted text |
-| 60 | **Domain Health Dashboard** | Live DNS verification status (MX, SPF, DKIM, DMARC) with auto-fix suggestions |
-| 61 | **Signature Click Tracking** | Track link clicks in your email signature with analytics |
-| 62 | **Spam Score Calculator** | Pre-send deliverability scoring with 200+ spam trigger word detection |
-| 63 | **WebAuthn Passkeys** | Passwordless, phishing-proof login with FIDO2 passkey authentication |
-| 64 | **Email Backup & Archive** | Automated R2 snapshots with SHA-256 integrity checksums and search |
-| 65 | **PWA & Push Notifications** | Installable progressive web app with offline support and real-time push alerts |
-| 66 | **Open-Source Plugin System** | Hook-based architecture for community plugins (AutoTranslate, CRM Sync, etc.) |
+### 🧠 1. AI & Smart Email Intelligence
+1. **Smart Reply Generator**: 3 contextual one-click reply suggestions with sentiment & tone adaptation.
+2. **Email Summarizer (TL;DR)**: Extractive TextRank graph algorithm for 1-sentence summaries & key points.
+3. **Smart Categorization**: Bayesian token scoring into Primary/Updates/Social/Promos + priority scoring.
+4. **Sentiment & Urgency Analyzer**: Polarity scoring and urgent deadline extraction.
+5. **Action Item Extractor**: Modal verb grammar matcher for commitments, tasks, assignees & due dates.
+6. **BM25 Full-Text Search**: Inverted index search with boolean operators & Levenshtein typo tolerance.
+7. **Decision Tracker**: Consensus & agreement discourse pattern parser across email threads.
+8. **Follow-Up Nudge Engine**: Response expectation tracker identifying unanswered emails.
+9. **Tone & Polish Rephraser**: Syntactic transformer for Professional, Casual, Concise, and Expanded modes.
+10. **Smart Unsubscribe**: RFC 2369 / RFC 8058 header & HTML link parser for 1-click unsubscribe.
+11. **AI Email Composer**: Generate full email drafts from one-line prompts using Cloudflare Workers AI.
+12. **Smart Reply Feedback Loop**: Learns from which smart reply suggestions the user clicks.
+13. **Multi-Language Detection**: Trigram frequency analysis supporting 15+ languages.
+14. **Email Clustering**: Group related emails using cosine similarity on TF-IDF vectors.
+15. **Intent Classifier**: Classify email intent (request, inform, confirm, reject, question).
+16. **Automatic Meeting Detector**: Extract meeting dates, times, and attendees from email bodies.
+17. **Full Thread Conversation Summarizer**: Multi-turn conversation summarization across threads.
+18. **Contact Relationship Graph**: Adjacency list mapping communication frequency and closeness.
+19. **Smart Send-Time Predictor**: Predicts best send time based on recipient's open/reply habits.
+20. **Email Deduplication Detection**: SHA-256 and fuzzy content hashing to identify duplicate messages.
+21. **Priority Inbox (Learned Scoring)**: Naive Bayes classifier trained on read/archive patterns.
+22. **Writing Style Fingerprint**: Analyzes vocabulary richness and sentence structure to verify authenticity.
+23. **Autonomous AI Agent**: Autonomous rule-based inbox management and triage agent.
+
+### ⚡ 2. Productivity & Workflows
+24. **Scheduled Send**: Future timestamp dispatch queue with cancellation support.
+25. **Undo Send**: 5-30s configurable grace buffer with instant cancellation.
+26. **Email Snooze**: Temporarily hide emails and resurface them at a chosen time.
+27. **Automation Filter Engine**: Trigger-Condition-Action AST workflow evaluator on emails.
+28. **Templates & Canned Responses**: Dynamic `{{placeholder}}` variable interpolation engine.
+29. **Keyboard Shortcuts & Cmd+K**: Superhuman-style navigation + global command palette search.
+30. **Thread Tree View**: JWZ RFC 5322 conversation tree reconstruction algorithm.
+31. **Batch Actions**: Multi-select bulk operations (mark read, archive, label, delete).
+32. **Vacation Responder**: RFC 3834 auto-responder with 24h cooldown loop prevention.
+33. **Offline Support**: IndexedDB local storage with offline action mutation queue.
+34. **Catch-All Wildcard Routing**: Capture any email sent to `*@yourdomain.com` automatically.
+35. **Email Forwarding Rules**: Auto-forward emails based on sender, subject, or keywords.
+36. **Contact Auto-Complete**: Trie-based fuzzy search with frecency-ranked address book.
+37. **Conversation View**: Gmail-style threaded conversations with collapsed quoted text.
+38. **Recurring Snooze Patterns**: Cron-like recurring snooze (every Monday 9am, every weekday).
+39. **Automation Rule Chaining**: DAG-based workflow execution where rule outputs feed into inputs.
+40. **Template Usage Analytics**: Track usage frequency and response rates per template.
+41. **Smart Auto-Archive**: Auto-archive emails older than X days with no reply.
+42. **Read Time Estimator**: Calculate estimated reading time based on complexity and attachments.
+43. **Smart Compose Predictions**: Autocomplete predictions using n-gram frequency.
+44. **Per-Email Follow-Up Tracking**: Custom reminders if no reply received within N days.
+45. **Email Pinning**: Pin crucial threads to the top of the inbox.
+46. **Focus Mode**: Distraction-free filtering to show only unread or starred emails.
+47. **Daily Digest Compilation**: Automated daily summary compilation for unread messages.
+
+### 🤝 3. Collaboration & Team Workspaces
+48. **Shared Team Inboxes**: Multi-user domain inbox access with Owner/Admin/Member/Viewer RBAC.
+49. **Email Assignment**: Thread assignment with status lifecycle state machine.
+50. **Internal Notes**: Private team notes hidden from external recipients.
+51. **Live Presence**: Active viewers and composing collision indicator.
+52. **Collaborative Drafts**: Optimistic concurrency versioning & text patch merger.
+53. **@Mentions & Alerts**: `@username` parser with in-app notification alerts.
+54. **Audit Log**: Append-only immutable chronological event store.
+55. **Shareable Thread Links**: Secure tokenized expiring public/internal links.
+56. **Tag Hierarchy**: Recursive color-coded nested taxonomy (`Support/Tier1`).
+57. **CRM Sidebar**: Sender profile, history count, recent threads, and notes drawer.
+58. **Real-Time Typing Indicators**: SSE-based broadcast of teammate drafting status.
+59. **SLA Timers**: SLA breach monitoring on shared inbox assignments.
+60. **CSAT Surveys**: Automated customer satisfaction star-rating links for support.
+61. **Team Performance Dashboard**: Agent resolution stats and team leaderboards.
+62. **Round-Robin Assignment**: Auto-assignment rotation across available team members.
+63. **Draft Approval Workflows**: Multi-stage approval queue before sending sensitive drafts.
+64. **Admin-Enforced Team Signatures**: Global corporate signature enforcement policy.
+65. **Internal Knowledge Base**: Searchable wiki linked directly to email threads.
+66. **End-to-End Encrypted Team Chat**: Real-time encrypted team channels with AES-256-GCM.
+
+### 🛡️ 4. Security, Privacy & Deliverability
+67. **DKIM/SPF/DMARC Verifier**: RFC 7208 / 6376 / 7489 cryptographic header verifier.
+68. **Phishing Detector**: Homograph/punycode detector + href/text mismatch analyzer.
+69. **E2E Encryption**: AES-256-GCM / RSA-OAEP Web Crypto envelope encryption.
+70. **Attachment Scanner**: Magic byte file signature validator + executable blocker.
+71. **DLP & PII Scanner**: Pre-send scanner for credit cards (Luhn), SSNs, API tokens.
+72. **Tracking Pixel Blocker**: HTML sanitizer stripping 1x1 tracking pixels.
+73. **Expiring Emails**: Confidential mode with PIN protection & auto-purge.
+74. **Two-Factor Auth (TOTP)**: Pure JS RFC 6238 TOTP engine with QR code & backup codes.
+75. **Rate Limiter**: Sliding window token bucket for API routes.
+76. **GDPR Data Export & Purge**: Streaming JSON/EML export and cryptographic record purging.
+77. **Signature Click Tracking**: Track link clicks in your email signature with analytics.
+78. **Spam Score Calculator**: Pre-send deliverability scoring with 200+ spam trigger words.
+79. **WebAuthn Passkeys**: Passwordless, phishing-proof login with FIDO2 passkey authentication.
+80. **Email Backup & Archive**: Automated R2 snapshots with SHA-256 integrity checksums.
+81. **Real SPF DNS Validation**: Recursive DNS query validation for SPF records.
+82. **ARC Chain Verification**: Authenticated Received Chain header verification.
+83. **Suspicious Login Detection**: Geolocation and device fingerprint anomaly detection.
+84. **Session Management**: View active sessions with remote revocation.
+85. **HTML Email Sandboxing**: Strips scripts, event handlers, and malicious iframes.
+86. **Link Reputation Preview**: Domain risk scoring before opening links.
+87. **Audit Log PII Redactor**: Automatic redaction of sensitive info in audit records.
+88. **IP-Based Access Control**: Whitelist/blacklist CIDR IP ranges for API access.
+89. **Brute-Force Login Protection**: Automatic temporary lockouts after failed attempts.
+90. **Secure Email Recall**: Cryptographic token-based recall request processor.
+91. **SOC 2 Compliance Reporting**: Structured audit exports for security compliance.
+92. **BIMI Logo Verification**: Brand Indicators for Message Identification validator.
+93. **Outbound Security Scorer**: Pre-send email header and MIME compliance checks.
+94. **Zero-Knowledge Storage**: Client-side AES-GCM encryption where server never sees plain text.
+
+### 🎨 5. Protocols, Extensibility & Customization
+95. **CalDAV Calendar Server**: Built-in calendar server with RFC 5545 iCalendar support.
+96. **CardDAV Contact Server**: Contact synchronization server with RFC 6352 vCard support.
+97. **JMAP Protocol Server**: RFC 8620 modern email protocol implementation.
+98. **IMAP Protocol Bridge**: IMAP translation layer for native email clients (Thunderbird, Apple Mail).
+99. **Email Aliasing System**: Unlimited custom aliases and random burner addresses.
+100. **Email Analytics Dashboard**: Pure SQL analytics on volume, response time, and activity.
+101. **Webhook Integrations**: HMAC-signed webhooks to Slack, Discord, and Zapier.
+102. **Multi-Domain Manager**: Single dashboard for 5+ custom domains with DNS health monitoring.
+103. **PWA & Web Push**: Progressive Web App with offline support and push alerts.
+104. **Open-Source Plugin System**: Hook architecture (`BEFORE_SEND`, `AFTER_RECEIVE`, etc.).
+105. **Email-to-Blog Auto-Publisher**: Ingest inbound emails and publish as Markdown blog posts.
+106. **Plugin Marketplace**: Decentralized marketplace directory with permission validation.
+107. **White-Label Multi-Tenant SaaS**: Custom branding, logos, CSS, and isolated tenant environments.
+108. **Self-Hosted Docker Deployment**: Multi-stage `Dockerfile` and `docker-compose.yml` for standalone deployment.
+109. **Virtual Scroller**: 10,000+ email virtualized rendering using IntersectionObserver.
+110. **Skeleton Loading UI**: Animated shimmer states across all components.
+111. **Email Hover Popovers**: Debounced preview popovers on email hover.
+112. **Responsive Mobile Layout**: Mobile navigation with bottom tab bar and swipe gestures.
+113. **Accessibility (a11y) Support**: Full ARIA labels and focus trapping.
+114. **Web Animations & Transitions**: Micro-animations using Web Animations API.
+115. **Right-Click Context Menus**: Contextual action menus on emails.
+116. **Inline Image Thumbnails**: Automatic thumbnail extraction in inbox view.
+117. **Browser Tab Badge Counter**: Live unread count on tab title and favicon.
+118. **Search Result Highlighting**: `<mark>` wrapped search match highlights.
+119. **Onboarding Setup Wizard**: Step-by-step interactive domain configuration wizard.
+120. **Resizable Custom Sidebar**: Collapsible drag-to-resize navigation pane.
+121. **Initial-Based Avatar Generator**: Deterministic SVG avatars with initials.
+122. **Floating Undo Toasts**: Floating notification banners with countdown timers.
+123. **Dual-Pane Split Inbox**: Side-by-side view for Primary and Updates categories.
 
 ---
 
@@ -117,29 +152,42 @@ mailops/
 │   │   ├── index.ts              # Main router + Email Routing handler
 │   │   ├── db/schema.ts          # Drizzle ORM schema (25+ tables)
 │   │   ├── routes/               # REST API endpoints
-│   │   │   ├── ai.ts             # Features 1-10
-│   │   │   ├── productivity.ts   # Features 11-20
-│   │   │   ├── collaboration.ts  # Features 21-30
-│   │   │   ├── security.ts       # Features 31-40
-│   │   │   └── customization.ts  # Features 41-50
-│   │   └── modules/              # Pure TS business logic
-│   │       ├── ai/               # TextRank, BM25, Sentiment, etc.
-│   │       ├── productivity/     # JWZ Threading, Filter AST, etc.
-│   │       ├── collaboration/    # RBAC, Presence, Drafts, etc.
-│   │       ├── security/         # WebCrypto, TOTP, DLP, etc.
-│   │       └── customization/    # Themes, EML, Audio, etc.
+│   │   │   ├── ai.ts             # AI endpoints
+│   │   │   ├── productivity.ts   # Productivity endpoints
+│   │   │   ├── collaboration.ts  # Collaboration endpoints
+│   │   │   ├── security.ts       # Security endpoints
+│   │   │   └── customization.ts  # Customization endpoints
+│   │   └── modules/              # Pure TS business logic modules
+│   │       ├── ai/               # 15+ AI & ML modules
+│   │       ├── productivity/     # 15+ Workflow modules
+│   │       ├── collaboration/    # 15+ Team & chat modules
+│   │       ├── security/         # 20+ Encryption & compliance modules
+│   │       ├── calendar/         # CalDAV server
+│   │       ├── contacts/         # CardDAV server
+│   │       ├── protocols/        # JMAP & IMAP servers
+│   │       ├── aliasing/         # Custom alias engine
+│   │       ├── analytics/        # SQL analytics engine
+│   │       ├── routing/          # Catch-all & forwarding rules
+│   │       ├── plugins/          # Hook-based plugin system
+│   │       ├── marketplace/      # Plugin marketplace directory
+│   │       ├── publishing/       # Email-to-blog publisher
+│   │       └── saas/             # White-label tenant engine
 │   └── test/                     # Backend test suites
 ├── web/                          # React SPA (Vite + Tailwind)
 │   └── src/
-│       ├── components/           # 50+ React components
-│       │   ├── ai/               # SmartReplyBar, SummarizerCard, etc.
-│       │   ├── collaboration/    # PresenceStack, CRMSidebar, etc.
-│       │   ├── security/         # EncryptedViewer, PhishingBanner, etc.
-│       │   ├── productivity/     # CommandPalette, ThreadTree, etc.
-│       │   └── customization/    # FolderDnD, SignatureBuilder, etc.
-│       ├── context/              # React state providers
-│       ├── utils/                # Client-side helpers
+│       ├── components/           # 60+ Modular React components
+│       │   ├── ai/               # AI cards, summarizers, tone selectors
+│       │   ├── collaboration/    # Presence, CRM, drafts, chat
+│       │   ├── security/         # Encrypted viewers, 2FA, phishing banners
+│       │   ├── productivity/     # Command palette, snooze, rules
+│       │   ├── customization/    # Themes, signatures, folders
+│       │   ├── onboarding/       # Setup wizard
+│       │   └── ui/               # Virtual scroller, context menus, toasts
+│       ├── context/              # State management contexts
+│       ├── utils/                # Client-side Web APIs (Audio, Crypto, SW)
 │       └── test/                 # Frontend test suites
+├── Dockerfile                    # Standalone self-hosted container
+├── docker-compose.yml            # One-click Docker Compose configuration
 └── README.md
 ```
 
@@ -156,7 +204,7 @@ mailops/
 
 ### Zero Dependencies Philosophy
 
-All 50 features are implemented using **pure TypeScript** and **native Web APIs**:
+All features are implemented using **pure TypeScript** and **native Web APIs**:
 - `crypto.subtle` for AES-256-GCM encryption, RSA-OAEP, HMAC-SHA1 TOTP
 - `AudioContext` for synthesized notification sounds
 - `IndexedDB` for offline email storage
@@ -169,12 +217,14 @@ No additional NPM runtime dependencies beyond the original stack (Hono, Drizzle,
 
 ## 🚀 Getting Started
 
-### 1. Prerequisites
+### Option A: Cloudflare Free Serverless
+
+#### 1. Prerequisites
 - Node.js & npm installed
 - Cloudflare account with a domain
 - Wrangler CLI (`npm i -g wrangler`)
 
-### 2. Backend Setup
+#### 2. Backend Setup
 ```bash
 cd api
 npm install
@@ -191,14 +241,28 @@ npm run db:migrate
 npm run deploy
 ```
 
-### 3. Frontend Setup
+#### 3. Frontend Setup
 ```bash
 cd web
 npm install
 npm run dev
 ```
 
-### 4. Gmail / Outlook Integration
+---
+
+### Option B: Standalone Self-Hosted Docker
+
+Run Mailops anywhere with a single Docker command:
+
+```bash
+docker-compose up -d
+```
+
+Open `http://localhost:3000` to access the full platform!
+
+---
+
+## 📧 Gmail / Outlook Integration
 
 **Receive emails in Gmail:**
 1. Go to Cloudflare Dashboard → Email → Email Routing
@@ -207,23 +271,6 @@ npm run dev
 **Send from Gmail as your custom domain:**
 1. Gmail Settings → Accounts → "Send mail as" → Add
 2. SMTP: `smtp.resend.com`, Port: `465`, User: `resend`, Pass: your Resend API key
-
-### 5. Environment Variables
-```bash
-wrangler secret put RESEND_API_KEY  # For outbound emails
-```
-
----
-
-## 🧪 Testing
-
-```bash
-# Backend tests
-cd api && npm test
-
-# Frontend tests  
-cd web && npm test
-```
 
 ---
 
