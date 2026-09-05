@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  mailops:
+    build: .
+    container_name: mailops-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+      - DATABASE_PATH=/data/mailops.sqlite
+      - RESEND_API_KEY=${RESEND_API_KEY:-}
+    volumes:
+      - mailops_data:/data
+
+volumes:
+  mailops_data:
+    driver: local
